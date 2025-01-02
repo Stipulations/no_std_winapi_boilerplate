@@ -1,0 +1,13 @@
+[package]
+name = "no_std_writeconsolew"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["consoleapi", "processenv", "winbase"] }
