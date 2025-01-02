@@ -4,7 +4,7 @@
 
 use core::ptr;
 use core::panic::PanicInfo;
-use winapi::um::{processthreadsapi::ExitProcess, winuser::{MessageBoxA, MB_OK}};
+use winapi::um::{processthreadsapi::ExitProcess, winuser::{MessageBoxA, MessageBoxW, MB_OK}};
 
 #[panic_handler]
 fn panic_handler(_: &PanicInfo<'_>) -> ! {
